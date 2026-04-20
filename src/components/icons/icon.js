@@ -1,21 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  IconAppStore,
-  IconBookmark,
-  IconCodepen,
-  IconExternal,
-  IconFolder,
-  IconFork,
-  IconGitHub,
-  IconInstagram,
-  IconLinkedin,
-  IconLoader,
-  IconLogo,
-  IconPlayStore,
-  IconStar,
-  IconTwitter,
-} from '@components/icons';
+
+import IconAppStore from './appstore';
+import IconBookmark from './bookmark';
+import IconCodepen from './codepen';
+import IconCyber from './cyber';
+import IconExternal from './external';
+import IconFolder from './folder';
+import IconFork from './fork';
+import IconGitHub from './github';
+import IconInstagram from './instagram';
+import IconLinkedin from './linkedin';
+import IconLoader from './loader';
+import IconLogo from './logo';
+import IconPlayStore from './playstore';
+import IconStar from './star';
+import IconTwitter from './twitter';
+import IconHex from './hex';
 
 const Icon = ({ name }) => {
   switch (name) {
@@ -25,6 +26,8 @@ const Icon = ({ name }) => {
       return <IconBookmark />;
     case 'Codepen':
       return <IconCodepen />;
+    case 'Cyber':
+      return <IconCyber />;
     case 'External':
       return <IconExternal />;
     case 'Folder':
@@ -33,6 +36,8 @@ const Icon = ({ name }) => {
       return <IconFork />;
     case 'GitHub':
       return <IconGitHub />;
+    case 'Hex':
+      return <IconHex />;
     case 'Instagram':
       return <IconInstagram />;
     case 'Linkedin':

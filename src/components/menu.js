@@ -124,19 +124,10 @@ const StyledSidebar = styled.aside`
     li {
       position: relative;
       margin: 0 auto 20px;
-      counter-increment: item 1;
       font-size: clamp(var(--fz-sm), 4vw, var(--fz-lg));
 
       @media (max-width: 600px) {
         margin: 0 auto 10px;
-      }
-
-      &:before {
-        content: '0' counter(item) '.';
-        display: block;
-        margin-bottom: 5px;
-        color: var(--green);
-        font-size: var(--fz-sm);
       }
     }
 
@@ -152,6 +143,7 @@ const StyledSidebar = styled.aside`
     padding: 18px 50px;
     margin: 10% auto 0;
     width: max-content;
+    font-size: clamp(var(--fz-sm), 4vw, var(--fz-lg));
   }
 `;
 

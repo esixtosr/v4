@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
   padding: 0px 50px;
   width: 100%;
   height: var(--nav-height);
-  background-color: rgba(10, 25, 47, 0.85);
+  bbackground-color: #020617;
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
@@ -38,7 +38,7 @@ const StyledHeader = styled.header`
       css`
         height: var(--nav-scroll-height);
         transform: translateY(0px);
-        background-color: rgba(10, 25, 47, 0.85);
+        background-color: #020617;
         box-shadow: 0 10px 30px -10px var(--navy-shadow);
       `};
 
@@ -92,7 +92,7 @@ const StyledNav = styled.nav`
             transition: var(--transition);
           }
           polygon {
-            fill: var(--navy);
+            fill: #020617;
           }
         }
       }
@@ -112,6 +112,10 @@ const StyledNav = styled.nav`
 const StyledLinks = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex: 1;
+  max-width: 900px;
+  margin-left: 40px;
 
   @media (max-width: 768px) {
     display: none;
@@ -119,26 +123,19 @@ const StyledLinks = styled.div`
 
   ol {
     ${({ theme }) => theme.mixins.flexBetween};
+    justify-content: center;
+    flex-wrap: nowrap;
     padding: 0;
     margin: 0;
     list-style: none;
 
     li {
-      margin: 0 5px;
+      margin: 0 12px;
       position: relative;
-      counter-increment: item 1;
-      font-size: var(--fz-xs);
+      font-size: var(--fz-sm);
 
       a {
         padding: 10px;
-
-        &:before {
-          content: '0' counter(item) '.';
-          margin-right: 5px;
-          color: var(--green);
-          font-size: var(--fz-xxs);
-          text-align: right;
-        }
       }
     }
   }
@@ -146,7 +143,7 @@ const StyledLinks = styled.div`
   .resume-button {
     ${({ theme }) => theme.mixins.smallButton};
     margin-left: 15px;
-    font-size: var(--fz-xs);
+    font-size: var(--fz-sm);
   }
 `;
 

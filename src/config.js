@@ -1,5 +1,5 @@
 module.exports = {
-  email: 'brittany.chiang@gmail.com',
+  email: 'esixtosr@proton.me',
 
   socialMedia: [
     {
@@ -11,16 +11,8 @@ module.exports = {
       url: 'https://www.instagram.com/bchiang7',
     },
     {
-      name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
-    },
-    {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7',
-    },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
+      url: 'https://www.linkedin.com/in/edwin-sixtos-ruiz/',
     },
   ],
 
@@ -34,8 +26,20 @@ module.exports = {
       url: '/#jobs',
     },
     {
-      name: 'Work',
+      name: 'Education',
+      url: '/#education',
+    },
+    {
+      name: 'Skills',
+      url: '/#skills',
+    },
+    {
+      name: 'Projects',
       url: '/#projects',
+    },
+    {
+      name: 'Certs',
+      url: '/#certificates',
     },
     {
       name: 'Contact',
@@ -45,7 +49,7 @@ module.exports = {
 
   colors: {
     green: '#64ffda',
-    navy: '#0a192f',
+    navy: '#020617',
     darkNavy: '#020c1b',
   },
 
